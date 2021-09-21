@@ -7,9 +7,15 @@ const ingredients = [
     'Приправы',
   ];
 
-  const  = document.createElement("ingredients");
-  const food = ingredients.forEach(ingredient=> {
-      const items = document.createElement("li");
-      ulList.appendChild(items)
+  const ingredientsEl = document.getElementById("ingredients");
+  
+  ingredients.forEach((ingredient) => {
+    const ingredientLi = document.createElement("li");
+    const liEl = document.createElement("a");
+  
+    ingredientLi.appendChild(liEl);
+    ingredientsEl.appendChild(ingredientLi);
+    ingredientLi.textContent = ingredient;
   });
-  console.log(food);
+  
+  document.body.appendChild(ingredientsEl);
