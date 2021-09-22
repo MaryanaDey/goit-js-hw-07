@@ -1,8 +1,9 @@
-const list = document.querySelector("#categories");
+const itemsEl = document.querySelectorAll('.item');
+console.log(`В списке ${itemsEl.length} категории`);
 
-console.log(`В списке ${list.children.length} категории`);
-
-[...list.children].forEach((el) => 
-console.log(`Категория:${el.firstElementChild.textContent}
-Количество элементов: ${el.lastElementChild.children.length}`)
-);
+itemsEl.forEach(item => {
+  const titleEl = item.querySelector('h2').textContent;
+  console.log(`
+Категория: ${titleEl}
+Количество элементов: ${item.querySelectorAll('li').length}`);
+});

@@ -11,8 +11,11 @@ function calculateSymbol(e) {
 
 
     if (userVal >= maxLength){
-        return refs.inputFiled.classList.add("valid");
+      return refs.inputFiled.classList.add("valid");
     } else {
         refs.inputFiled.classList.add("invalid"); 
     }
 }
+
+
+
