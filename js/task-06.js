@@ -10,10 +10,10 @@ function calculateSymbol(e) {
 
 
 
-    if (userVal >= maxLength){
-      return refs.inputFiled.classList.add("valid");
+    if (userVal == maxLength){
+     return refs.inputFiled.classList.add("valid");
     } else {
-        refs.inputFiled.classList.add("invalid"); 
+       refs.inputFiled.classList.add("invalid"); 
     }
 }
 
